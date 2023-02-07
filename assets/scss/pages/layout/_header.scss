@@ -1,0 +1,135 @@
+    @import "../../patrials/variables";  
+    
+      #nav-area{
+        background-image: url("../../../../assets/img/hero-carousel-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+          
+        .bg{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.6;
+            padding-top: 20px;
+            .logo{
+               
+                padding-left: 60px;
+                p{
+                  color: white;
+                  font-size: 20px;
+                  font-weight: 600;
+                  span{
+                    color: yellow;
+                  }
+                }
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    
+                    li{
+                        list-style-type: $list-type;
+                        padding-left: 20px;
+                        position: relative;
+                        &:hover{
+                            a{
+                                color: white;
+                                
+                            }
+                            .hover{
+                                display: block;
+                                width: 100%;
+                                // transition: all 0.3s ease-in-out 0s;
+                             
+                            }
+
+                        }
+                        a{
+                            text-decoration: $text-decor;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #a7a8aa;
+                            text-transform: uppercase;
+                        }
+                        .hover{
+                            // width: 100%;
+                            height: 2px;
+                            background-color: #feb900;
+                            opacity: 1;
+                            display: none;
+                            transition-property: width;
+                            transition-duration: 2s;
+                            transition-timing-function: linear;
+                            transition-delay: 1s;
+                        }
+                    }
+                }
+            }
+
+            .main{
+                width: 100%;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 50px;
+                .wrapper{
+                   
+                    .title{
+                        font-size: 50px;
+                        font-weight: 900;
+                        color: white;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                    .line{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        hr{
+                            width: 70px;
+                            color: yellow;
+                            height: 5px;
+                            opacity: 1;
+                            
+                        }
+                    }
+                    .lorem{
+                        color: white;
+                        text-align: center;
+                        line-height: 10px;
+                    }
+                    .button{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 20px;
+                        .link{
+                            border: 1px solid yellow;
+                            border-radius: 20px;
+                            width: 120px;
+                            height: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                           a{
+                            text-decoration: $text-decor ;
+                            color: white;
+                            font-weight: 500;
+                           }
+                        }
+                    }
+                   
+
+
+                }
+                
+            }
+        }
+  
+
+
+
+}
